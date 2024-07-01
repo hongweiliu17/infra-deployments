@@ -4,7 +4,7 @@ declare -r ROOT="${BASH_SOURCE[0]%/*}"
 
 main() {
     load_global_vars
-    "${ROOT}/secret-creator/create-plnsvc-secrets.sh"
+    #"${ROOT}/secret-creator/create-plnsvc-secrets.sh"
     "${ROOT}/secret-creator/create-gitops-secrets.sh"
 
     [[ -z "$MY_GITHUB_TOKEN" ]] ||
