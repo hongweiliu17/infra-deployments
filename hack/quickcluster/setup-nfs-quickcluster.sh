@@ -5,9 +5,9 @@ set -e
 trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
 trap 'echo "\"${last_command}\" command completed with exit code $?."' EXIT
 
-ROOT="$(realpath -mq ${BASH_SOURCE[0]}/../../..)"
+ROOT=/Users/hongliu/HAS/infra-build
 
-export QUICKCLUSTERKEY=${2:-~/.ssh/id_rsa}
+export QUICKCLUSTERKEY=${2:-~/.ssh/id_cluster}
 export NAMESPACE=openshift-nfs-storage
 PORT=2049
 

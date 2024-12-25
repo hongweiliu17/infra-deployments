@@ -9,7 +9,7 @@ main() {
     create_s3_secret tekton-logging tekton-results-s3
     create_db_cert_secret_and_configmap
     if ! [ -x "$(command -v mc)" ]; then
-        curl https://dl.min.io/client/mc/release/linux-amd64/mc \
+        curl https://dl.min.io/client/mc/release/darwin-amd64/mc \
           --create-dirs \
         -o $HOME/minio-binaries/mc && chmod +x $HOME/minio-binaries/mc
         export PATH=$PATH:$HOME/minio-binaries/
