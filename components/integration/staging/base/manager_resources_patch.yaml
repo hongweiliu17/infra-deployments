@@ -11,10 +11,10 @@ spec:
         resources:
           limits:
             cpu: 500m
-            memory: 8192Mi
+            memory: 12288Mi
           requests:
             cpu: 100m
-            memory: 8192Mi
+            memory: 12288Mi
         env:
         - name: CONSOLE_NAME
           valueFrom:
